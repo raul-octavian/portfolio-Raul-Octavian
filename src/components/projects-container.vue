@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background-color: $Gravity---Sand-Creatures-II-4-rgba;
   height: 100%;
 }
 
