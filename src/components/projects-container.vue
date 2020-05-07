@@ -48,7 +48,7 @@ export default {
           dTwo:
             "To resolve this we set on designing a communication interface, especially for mobile and tablet use. The goal was to inform and create a community around food and cultural diversity  The following project is the result of that.",
           sourceLink: "https://github.com/raul-octavian/canteen-project",
-          activeLink: "easvcanteen.netlify.app"
+          activeLink: "https://easvcanteen.netlify.app/"
         },
         {
           id: "3",
