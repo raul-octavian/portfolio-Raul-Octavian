@@ -56,7 +56,7 @@ export default {
   border-left: none;
   margin: 30px 0;
   position: relative;
-  background: $Gravity---Sand-Creatures-II-2-rgba;
+  background: $Gravity---Sand-Creatures-II-2-rgba-trans;
   z-index: 90;
 
   &:before {
@@ -64,7 +64,13 @@ export default {
     height: 70px;
     width: 70px;
     border: 2px solid $Gravity---Sand-Creatures-II-1-rgba;
-    background: $Gravity---Sand-Creatures-II-2-rgba;
+    background: rgb(17, 28, 38);
+    background: linear-gradient(
+      405deg,
+      rgba(17, 28, 38, 0) 51%,
+      rgba(17, 28, 38, 0.6) 50%,
+      #111c26 96%
+    );
     z-index: 89;
     border-bottom: none;
     border-left: none;
@@ -107,19 +113,20 @@ svg {
 @media screen and (max-width: 600px) {
   #navigation {
     position: fixed;
-    top: 80px;
-    z-index: 90;
+    top: 0;
+    right: 0;
+    z-index: 99;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    width: 60%;
   }
   //position change
   .nav-element {
     position: absolute;
     left: 0px;
-    top: -35px;
-    z-index: 90;
+    top: -80px;
+    z-index: 99;
     transition: all 300ms ease-in-out;
 
     &:hover {
@@ -130,47 +137,46 @@ svg {
 
   // styleing element
   .nav-element {
-    width: 80px;
-    height: 70px;
-    padding: 0 10px;
+    width: 40px;
+    height: 130px;
+    padding: 0 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 10px;
     align-items: center;
-    border: 2px solid $Gravity---Sand-Creatures-II-1-rgba;
-    border-right: 2px solid $Gravity---Sand-Creatures-II-1-rgba;
-    border-left: 2px solid $Gravity---Sand-Creatures-II-1-rgba;
+    border: 1px solid $Gravity---Sand-Creatures-II-1-rgba;
+    border-right: 1px solid $Gravity---Sand-Creatures-II-1-rgba;
+    border-left: 1px solid $Gravity---Sand-Creatures-II-1-rgba;
     border-radius: 0 0 8px 8px;
     border-top: none;
     border-bottom: none;
     margin: 0 0;
     position: relative;
-    background: $Gravity---Sand-Creatures-II-2-rgba;
-    z-index: 90;
+    z-index: 0;
 
     &:before {
       content: "";
-      height: 55px;
-      width: 55px;
-      border: 2px solid $Gravity---Sand-Creatures-II-1-rgba;
-      background: $Gravity---Sand-Creatures-II-2-rgba;
+      height: 28px;
+      width: 28px;
+      border: 1px solid $Gravity---Sand-Creatures-II-1-rgba;
       z-index: 89;
       border-bottom: none;
       border-left: none;
       border-radius: 0 10px 0 0;
       position: absolute;
-      right: 11px;
-      top: 55%;
+      right: 5px;
+      top: 85%;
 
       transform: rotateZ(135deg);
     }
     svg {
-      height: 30px;
-      width: 40px;
+      height: 20px;
+      width: 25px;
       margin-left: 0;
       margin-right: 0;
-      margin-top: 10px;
-      margin-bottom: -15px;
+      margin-top: 15px;
+      margin-bottom: 0px;
       z-index: 90;
       position: relative;
     }
@@ -178,6 +184,9 @@ svg {
   .navigation-link {
     p {
       text-align: center;
+      transform: rotatez(90deg);
+      font-size: $font-size-small-mobile;
+      margin-bottom: 20px;
     }
   }
 }

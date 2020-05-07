@@ -63,7 +63,7 @@ header {
   height: 80px;
   padding: 20px 40px;
   position: fixed;
-  z-index: 100;
+  z-index: 98;
   background: $Gravity---Sand-Creatures-II-2-rgba;
   width: 100%;
 }

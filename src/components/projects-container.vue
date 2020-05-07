@@ -73,18 +73,6 @@ export default {
             "In this project, my role was as an animator and main actor. It was a pleasure to work with my colleagues and create something that is more than just a simple infomercial.",
           sourceLink: "https://www.youtube.com/watch?v=T5vAHnADXMY&t",
           activeLink: "https://www.youtube.com/watch?v=T5vAHnADXMY&t"
-        },
-        {
-          id: "5",
-          name: "Water Commercial",
-          dSmall: "School commercial project",
-          image: require("@/assets/commercial.jpeg"),
-          description:
-            "I was given the freedom to chose the subject and make a 20 sec commercial about it, I wasn't alone, we chose to do a video commercial about water and it's importance in our daily life.",
-          dTwo:
-            "I took the roles of main actor and director, and the focus was to communicate how importat water is out everyday life, how it is part of all of our activities from dusk till dawn",
-          sourceLink: "https://www.youtube.com/watch?v=5NYV_mr4IfM",
-          activeLink: "https://www.youtube.com/watch?v=5NYV_mr4IfM"
         }
       ]
     };
