@@ -16,7 +16,7 @@
       <br />
       {{ textContent.heroSeven }}
     </p>
-    <a href="#contact">
+    <a href="#contact" v-smooth-scroll>
       <button>contact me</button>
     </a>
   </article>
