@@ -12,7 +12,7 @@
         <button @click="showCard = !showCard" class="read-more">Read more</button>
       </a>
     </section>
-    <section v-show="showCard" class="description">
+    <section v-show="showCard" class="description" @click="showCard = !showCard">
       <h4>{{ name }}</h4>
       <p>{{ description }}</p>
       <p>{{ dTwo }}</p>
@@ -57,13 +57,27 @@ article {
   flex-grow: 1;
   padding: 20px 40px;
   margin: 20px 0;
-  position: relative;
+  position: absolute;
+  left: 15vw;
+  background-color: rgba(
+    $color: $Gravity---Sand-Creatures-II-3-hex,
+    $alpha: 0.9
+  );
+  color: $Gravity---Sand-Creatures-II-5-rgba;
+  height: 60vh;
+  width: 70vw;
+  z-index: 90;
+  border: 3px solid white;
+  margin: 20px;
+
   h4 {
     margin-bottom: 40px;
+    color: $Gravity---Sand-Creatures-II-5-rgba;
   }
   p {
     margin-bottom: 20px;
     font-size: $font-size-normal-tablet;
+    color: $Gravity---Sand-Creatures-II-5-rgba;
   }
 }
 

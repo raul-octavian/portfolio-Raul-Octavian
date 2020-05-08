@@ -1,5 +1,5 @@
 <template>
-  <form action="mailto:alburaul@gmail.com" class="shadow contact-form">
+  <form class="shadow contact-form">
     <section>
       <input
         type="text"
