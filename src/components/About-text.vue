@@ -7,9 +7,6 @@
 
     <p class="about-text">{{ textContent.aboutThree }}</p>
     <p class="about-text">{{ textContent.aboutFour }}</p>
-    <a href="../assets/Raul-Octavian-Albu-CV.pdf" targer="blank">
-      <button>Download CV</button>
-    </a>
   </section>
 </template>
 
