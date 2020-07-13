@@ -251,18 +251,15 @@ p {
   #home,
   #myPics {
     padding: 0 20vw 10vh;
-    min-height: 80vh;
   }
 
   #projects {
     padding: 0 20vw 10vh;
-    min-height: 80vh;
   }
 
   #about,
   #contact {
     padding: 0 20vw 10vh;
-    min-height: 80vh;
   }
 }
 
@@ -312,7 +309,7 @@ p {
     font-size: $font-size-xlarge-mobile;
   }
   h1 {
-    font-size: $font-size-xlarge-mobile;
+    font-size: $font-size-large-mobile;
   }
   h2 {
     font-size: $font-size-medium-mobile;

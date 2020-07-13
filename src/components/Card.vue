@@ -5,14 +5,20 @@
         <div class="project-image">
           <img :src="image" />
         </div>
-        <h4>{{name}}</h4>
+        <h4>{{ name }}</h4>
       </div>
       <p class="card-text">{{ dSmall }}</p>
       <a class="flex">
-        <button @click="showCard = !showCard" class="read-more">Read more</button>
+        <button @click="showCard = !showCard" class="read-more">
+          Read more
+        </button>
       </a>
     </section>
-    <section v-show="showCard" class="description" @click="showCard = !showCard">
+    <section
+      v-show="showCard"
+      class="description"
+      @click="showCard = !showCard"
+    >
       <h4>{{ name }}</h4>
       <p>{{ description }}</p>
       <p>{{ dTwo }}</p>
@@ -215,6 +221,13 @@ button {
     &:hover {
       transform: translateY(3px);
     }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    min-width: 240px;
+    width: 280px;
   }
 }
 </style>

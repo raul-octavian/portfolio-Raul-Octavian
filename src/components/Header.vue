@@ -66,6 +66,7 @@ header {
   z-index: 98;
   background: $Gravity---Sand-Creatures-II-2-rgba;
   width: 100%;
+  box-sizing: border-box;
 }
 header {
   svg {
@@ -79,5 +80,21 @@ header {
 .cls-2 {
   fill: #c30000;
 }
-</style>
 
+@media screen and (max-width: 600px) {
+  header {
+    svg {
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    padding: 20px 5vw;
+    svg {
+      height: 20px;
+    }
+  }
+}
+</style>
